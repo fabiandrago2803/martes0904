@@ -2,23 +2,23 @@ function validacion()
 {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
-    var vehiculo = document.getElementById("vehiculo").checked;
+    
     alert(nombre + " " + apellido);
     if (nombre == "" || apellido == "") {
       alert ("Todos los campos son obligatorios");
-      return false;
+      //return false;
 } else {
-  //alert('Los datos ingresados son correctos');
+  alert('Los datos ingresados son correctos');
   //return true;
 }
-if(vehiculo==true){
+if(document.getElementById("vehiculo").checked){
   alert('Los datos ingresados son correctos');
   }
   else
   {
     alert('Debe seleccionar una ocpion en el campo Vehiculo');
   }
-  
+
 }
 
 
