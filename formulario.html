@@ -10,15 +10,17 @@
 
         <p>Formulario de ingreso</p>
 
-        <form name="miform" >
+        <form name="miform" onsubmit="return validate()">
             <label for="nombre">Nombre: </label><br>
             <input type="text" id="nombre" name="nombre"><br>
             <label for="apellido">Apellido: </label><br>
             <input type="text" id="apellido" name="apellido"><br>
-            <label for="E-mail">E-mail: </label><br>
-            <input type="text" id="E-mail" name="E-mail"><br>
+            <label for="email">E-mail: </label><br>
+            <input type="email" id="email" name="email"><br>
+            <input type="submit" value="validate">
             <label for="fecha de nacimiento">Fecha de Nacimiento: </label><br>
             <input type="text" id="fecha de nacimiento" name="fecha de nacimiento"><br>
+            <br>
             <label >Genero: </label><br>
             <input type="radio" id="" value="Masculino" name="genero" checked > Masculino<br>
             <input type="radio" id="" value="Femenino" name="genero"> Femenino<br>
@@ -29,7 +31,15 @@
             <input type="checkbox" id="coche" name="vehiculo" value="Coche"> Coche<br>
             <input type="checkbox" id="bici" name="vehiculo" value="Bicicleta"> Bicicleta<br>
            
-            <input type="submit" onclick="validacion()">
+            <label >Elija una Marca de auto: </label>
+            <select id="autos" name="autos">
+                <option value="volvo">Renault</option>
+  <option value="saab">Toyota</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+            </select>
+
+            <input type="submit" value="submit">
 
         </form>
     </body>

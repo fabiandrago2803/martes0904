@@ -2,16 +2,30 @@ function validacion()
 {
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;
-    
-    alert(nombre + " " + apellido);
-    if (nombre == "" || apellido == "") {
+    var vehiculo = document.getElementById("vehiculo").checked;
+    var email = document.getElementById("E-mail").value;
+    //validacion de que el mail este completo
+alert(nombre + " " + apellido);
+
+    if (nombre == "" || apellido == "" || email == "") {
       alert ("Todos los campos son obligatorios");
       //return false;
 } else {
-  alert('Los datos ingresados son correctos');
+  //alert('Los datos ingresados son correctos');
   //return true;
+
+  console.log(validateemail)
+  if(validateemail())
+{
+  alert('Los datos ingresados son correctos');
 }
-if(document.getElementById("vehiculo").checked){
+else
+{
+alert('el mail no esta correcto')
+}
+}
+if(vehiculo.checked)
+{
   alert('Los datos ingresados son correctos');
   }
   else
