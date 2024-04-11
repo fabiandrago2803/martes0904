@@ -19,7 +19,7 @@ function validacion()
       //return true;
     }
       //console.log(validateEmail("javier@g,ail.com"));
-    if(validateEmail())
+    if(validateEmail(email))
         {
             alert('El mail esta correcto');                
         }
@@ -40,6 +40,7 @@ function validacion()
       return true;    
 }
 
+function validateEmail(email  )
 
 
 function funcion1() {
